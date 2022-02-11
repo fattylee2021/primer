@@ -20,13 +20,14 @@ export const prime: Handler = async (event: any) => {
     // break;
     return {
       statusCode: 200,
-      body: { hello: 'hello world' },
+      body: JSON.stringify({ hello: 'hello world' }),
       headers,
     };
   } catch (err) {
     return {
       statusCode: 500,
-      body: err,
+      // body: err,
+      body: '',
     };
   }
 };
