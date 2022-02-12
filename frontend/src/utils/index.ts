@@ -1,8 +1,7 @@
 import { IPrime } from 'types';
 import axios from 'axios';
 
-const bASE_URL =
-  'https://phmx1r5ac9.execute-api.us-east-2.amazonaws.com/default/prime';
+const bASE_URL = 'https://phmx1r5ac9.execute-api.us-east-2.amazonaws.com/prime';
 
 export const Axios = axios.create({
   baseURL: bASE_URL,
